@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volunteer Applications</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Parkinsans&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    
+    <style>
+        body {
+            font-family: 'Noto Sans', sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        h2, h3, h4 {
+            font-family: 'Parkinsans', cursive;
+            color: #333;
+        }
+        
+        h1 {
+            font-family: 'Parkinsans', cursive;
+            color: #ffffff;
+        }
+
+        .navbar-brand img {
+            height: 50px;
+        }
+
+        .btn-primary {
+            background-color: #004080;
+            border-color: #004080;
+        }
+
+        .btn-primary:hover {
+            background-color: #002952;
+        }
+
+        footer {
+            background-color: #004080;
+        }
+
+        footer p, footer a {
+            color: #fff;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <!-- PC Logo -->
+                <div class="d-none d-lg-block">
+                    <img src="https://i.ibb.co/SDTVW0Z/image.png" alt="PC Logo">
+                </div>
+                <!-- Mobile Logo -->
+                <div class="d-lg-none">
+                    <img src="https://i.ibb.co/FKDXf2Q/Green-Blue-Minimalist-Modern-Medical-Clinics-Logo.png" alt="Mobile Logo">
+                </div>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link text-dark" href="#about">About</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-dark" href="#features" id="featuresDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Features
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="featuresDropdown">
+                            <li><a class="dropdown-item" href="health.html">Mental Health Support</a></li>
+                            <li><a class="dropdown-item" href="infections.html">Infection Control</a></li>
+                            <li><a class="dropdown-item" href="scheduling.html">Productivity & Scheduling</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link text-dark" href="apply.html">Apply</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark" href="#contact">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark" href="cyber.html">Cybersecurity</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Title Section -->
+    <section id="home" class="text-white text-center py-5" style="background-color: #004080;">
+        <div class="container">
+            <h1>Volunteer Applications</h1>
+            <p class="lead">Join Us in Making a Difference!</p>
+        </div>
+    </section>
+
+    <!-- Apply Section -->
+    <section id="apply" class="py-5">
+        <div class="container">
+            <h2>Apply to Become a Volunteer</h2>
+            <p>Fill out the form below to apply as a volunteer and contribute to improving the lives of our residents.</p>
+            <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="387112a5-528b-4064-ac67-b1463133953f" />
+                <input type="hidden" name="subject" value="New Volunteer Application" />
+                <div class="mb-3">
+                    <label for="name" class="form-label">Full Name</label>
+                    <input type="text" class="form-control" id="name" name="name" placeholder="Your name" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email Address</label>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Your email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="phone" class="form-label">Phone Number</label>
+                    <input type="tel" class="form-control" id="phone" name="phone" placeholder="Your phone number" required>
+                </div>
+                <div class="mb-3">
+                    <label for="role" class="form-label">Preferred Volunteer Role</label>
+                    <select class="form-select" id="role" name="role" required>
+                        <option value="Companion Care">Companion Care</option>
+                        <option value="Activity Coordination">Activity Coordination</option>
+                        <option value="Administrative Support">Administrative Support</option>
+                        <option value="Meal Assistance">Meal Assistance</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Why Do You Want to Volunteer?</label>
+                    <textarea class="form-control" id="message" name="message" rows="4" placeholder="Share your motivation" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit Application</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Volunteer Roles Section -->
+    <section id="roles" class="bg-light py-5">
+        <div class="container">
+            <h2>Volunteer Roles</h2>
+            <div class="row">
+                <div class="col-md-3 mb-3">
+                    <h4>Companion Care</h4>
+                    <p>Provide companionship to residents through conversation, games, and shared activities.</p>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <h4>Activity Coordination</h4>
+                    <p>Help organize and run events, recreational activities, and group programs for residents.</p>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <h4>Administrative Support</h4>
+                    <p>Assist with paperwork, scheduling, and front-desk operations to support facility management.</p>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <h4>Meal Assistance</h4>
+                    <p>Help residents during meal times with serving, cleaning, and ensuring everyone is cared for.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-white text-center py-3">
+        <p>© 2024 Canadore LTC Volunteer Program. All rights reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
