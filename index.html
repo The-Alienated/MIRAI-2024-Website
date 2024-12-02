@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>North Bay LTC Volunteer Hub</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts: Noto Sans and Other -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Parkinsans&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    
+    <style>
+        body {
+            font-family: 'Noto Sans', sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        h2, h3, h4 {
+            font-family: 'Parkinsans', cursive;
+            color: #333;
+        }
+        
+        h1 {
+            font-family: 'Parkinsans', cursive;
+            color: #ffffff;
+        }
+        
+        .navbar-brand img {
+            height: 50px;
+        }
+
+        .navbar-brand:hover {
+            opacity: 0.8;
+        }
+
+        .btn-primary {
+            background-color: #004080;
+            border-color: #004080;
+        }
+
+        .btn-primary:hover {
+            background-color: #002952;
+        }
+
+        footer {
+            background-color: #004080;
+        }
+
+        footer p, footer a {
+            color: #fff;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <!-- PC Logo -->
+                <div class="d-none d-lg-block">
+                    <img src="https://i.ibb.co/SDTVW0Z/image.png" alt="PC Logo">
+                </div>
+                <!-- Mobile Logo -->
+                <div class="d-lg-none">
+                    <img src="https://i.ibb.co/FKDXf2Q/Green-Blue-Minimalist-Modern-Medical-Clinics-Logo.png" alt="Mobile Logo">
+                </div>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link text-dark" href="#about">About</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-dark" href="#features" id="featuresDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Features
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="featuresDropdown">
+                            <li><a class="dropdown-item" href="health.html">Mental Health Support</a></li>
+                            <li><a class="dropdown-item" href="infections.html">Infection Control</a></li>
+                            <li><a class="dropdown-item" href="scheduling.html">Productivity & Scheduling</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link text-dark" href="#apply.html">Apply</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark" href="#contact">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark" href="#cyber.html">Cybersecurity</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Title Section -->
+    <section id="home" class="text-white text-center py-5" style="background-color: #004080;">
+        <div class="container">
+            <h1 style="font-size: 80px">LTC Volunteer Hub</h1>
+            <p class="lead">Innovative Solutions for Resident Welleing</p>
+            <a href="#policies" class="btn btn-dark">Learn More</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>About Us</h2>
+                    <p>
+                        The North Bay LTC Volunteer Hub is a pioneering platform designed to enhance coordination, provide critical resources, and ensure the highest quality care for elderly residents through technology and innovation.
+                    </p>
+                </div>
+                <div class="col-md">
+                    <img src="https://media.discordapp.net/attachments/1030609903871594578/1312991885945602068/OIP.jpg?ex=674e827b&is=674d30fb&hm=f0e07432f67758bc2912aff0387ac251a75ad8e516994e7f7febd9af13e41d84&=&format=webp&width=701&height=701" class="rounded-circle" alt="Circular Image" style="width: 200px; height: 200px; margin-left: 110px">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section id="features" class="bg-light py-5">
+        <div class="container">
+            <h2>Features</h2>
+            <div class="row">
+                <div class="col-md-4" style="margin-top: 10px">
+                    <h4>Mental Health Support</h4>
+                    <p>Access training and tools to address loneliness, depression, and other challenges faced by residents.</p>
+                    <a href="health.html" class="btn btn-dark" style="margin: 10px; margin-top: 5px">Go to Page</a>
+                    <br>
+                </div>
+                <div class="col-md-4" style="margin-top: 10px">
+                    <h4>Infection Control</h4>
+                    <p>Comprehensive resources to manage infection risks, ensuring the safety of residents and staff.</p>
+                    <a href="infections.html" class="btn btn-dark" style="margin: 10px; margin-top: 27px">Go to Page</a>
+                </div>
+                <div class="col-md-4" style="margin-top: 10px">
+                    <h4>Productivity &amp; Scheduling</h4>
+                    <p>Streamlined scheduling tools and workflows for efficient resource management and task delegation.</p>
+                    <a href="scheduling.html" class="btn btn-dark" style="margin: 10px; margin-top: 5px">Go to Page</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <!-- Web3Forms Contact Form -->
+            <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+                <!-- Web3Forms hidden fields for handling the form -->
+                <input type="hidden" name="access_key" value="387112a5-528b-4064-ac67-b1463133953f" />
+                <input type="hidden" name="subject" value="New Contact Form Submission from Web3Forms" />
+                <input type="hidden" name="from_name" value="My Website" />
+                
+                <div class="mb-3">
+                    <label for="name" class="form-label">Full Name</label>
+                    <input type="text" class="form-control" id="name" name="name" placeholder="Your name" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Your email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control" id="message" name="message" rows="4" placeholder="Your message" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>    <em><a href="apply.html" style="color: #A9A9A9">looking to apply instead?</a></em>
+            </form>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="text-white text-center py-3">
+        <p>© 2024 North Bay LTC Hub. All rights reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
